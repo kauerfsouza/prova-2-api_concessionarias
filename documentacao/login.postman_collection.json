@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "66611fc8-32aa-4547-8fc7-1986b10c179a",
+		"name": "login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34096480"
+	},
+	"item": [
+		{
+			"name": "Criar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"kaue@example.com\",\r\n    \"senha\": \"123senha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NmMzMjgyYzEzOWJkMWMxMzMxOGM2MiIsImVtYWlsIjoiam9hb3NvdXphQGV4YW1wbGUuY29tIiwiaWF0IjoxNzE4Mzc1MTcxLCJleHAiOjE3MTgzNzg3NzF9.12JygUV34wJonDRcl_JWzfvLdTe8_nXgSsJIajTXTGQ",
+			"type": "string"
+		}
+	]
+}

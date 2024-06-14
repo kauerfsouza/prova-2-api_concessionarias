@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "363ea603-3d78-4bce-b32b-8700e037f8a1",
+		"name": "Veiculos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34096480"
+	},
+	"item": [
+		{
+			"name": "BuscarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Veiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Veiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Veiculos/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Veiculos",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoia2F1ZSIsImVtYWlsIjoia2F1ZUBleGFtcGxlLmNvbSIsImlhdCI6MTcxODM5OTg2MSwiZXhwIjoxNzE4NDAzNDYxfQ.XNlCbbWDQIqCs8NKE_kwKnZctourKWYhex1oiZy-NG8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"marca\": \"Toyota\",\r\n    \"modelo\": \"Hilux\",\r\n    \"ano\": 2022,\r\n    \"quilometragem\": 15000,\r\n    \"preco\": 400000,\r\n    \"valor\": 400000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Veiculo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Veiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Veiculos/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Veiculos",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Veiculos/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Veiculos",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

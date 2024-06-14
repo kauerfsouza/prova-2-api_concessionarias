@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "7db1b7ee-b1af-4224-90b4-9a79e2235ca0",
+		"name": "Funcionarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34096480"
+	},
+	"item": [
+		{
+			"name": "BuscarPorTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Funcionarios/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Funcionarios",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoia2F1ZSIsImVtYWlsIjoia2F1ZUBleGFtcGxlLmNvbSIsImlhdCI6MTcxODM5OTg2MSwiZXhwIjoxNzE4NDAzNDYxfQ.XNlCbbWDQIqCs8NKE_kwKnZctourKWYhex1oiZy-NG8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"joao \",\r\n    \"cpf\": \"987.654.321-00\",\r\n    \"email\": \"joao@example.com\",\r\n    \"telefone\": \"(88) 88888-8888\",\r\n    \"dataContratacao\": \"2022-10-05\",\r\n    \"dataNascimento\": \"1985-12-10\",\r\n    \"genero\": \"marculino\",\r\n    \"endereco\": {\r\n        \"cep\": \"54321-987\",\r\n        \"uf\": \"RJ\",\r\n        \"localidade\": \"Rio de Janeiro\",\r\n        \"bairro\": \"Copacabana\",\r\n        \"logradouro\": \"Avenida Atlântica\",\r\n        \"numero\": \"500\",\r\n        \"complemento\": \"Bloco A, Ap. 301\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Funcionarios/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Funcionarios",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Funcionarios/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Funcionarios",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

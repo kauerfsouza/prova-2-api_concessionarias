@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "aae05793-256e-4829-a2ff-77fa290abaf5",
+		"name": "Manutenção",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34096480"
+	},
+	"item": [
+		{
+			"name": "BusarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Manutencao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Manutencao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Manutencao/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Manutencao",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoia2F1ZSIsImVtYWlsIjoia2F1ZUBleGFtcGxlLmNvbSIsImlhdCI6MTcxODQwMzQ4MywiZXhwIjoxNzE4NDA3MDgzfQ.E7fiF1d-G1BBuzZalWnGh3rzWhicwaXMVgD-pjZicg0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_veiculo\": \"666cbccd032f0006c41601e1\",\r\n    \"id_cliente\": \"666cb16940dbfea1819c3333\",\r\n    \"id_funcionario\": \"666cbe0cec809bec938c1f2f\",\r\n    \"valor\": 15000,\r\n    \"data_entrada\": \"2024-06-20T00:00:00.000Z\",\r\n    \"data_saida\": \"2024-06-20T00:00:00.000Z\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Manutencao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Manutencao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Manutencao/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Manutencao",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Manutencao/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Manutencao",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

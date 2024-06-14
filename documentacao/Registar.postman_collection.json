@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "c8b4282d-dcf8-49c3-9764-39f9f3ba4d5e",
+		"name": "Registar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34096480"
+	},
+	"item": [
+		{
+			"name": "Criar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"nome\": \"kaue\",\r\n    \"email\": \"kaue@example.com\",\r\n    \"senha\": \"123senha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"registrar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

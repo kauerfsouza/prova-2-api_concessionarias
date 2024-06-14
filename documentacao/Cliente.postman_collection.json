@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "12656103-ea3a-4288-9542-b6f20f7d6925",
+		"name": "Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34096480"
+	},
+	"item": [
+		{
+			"name": "BuscarTodos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Cliente/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Cliente",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "criar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoia2F1ZSIsImVtYWlsIjoia2F1ZUBleGFtcGxlLmNvbSIsImlhdCI6MTcxODM5OTEyMiwiZXhwIjoxNzE4Mzk5NzIyfQ.gjdROtxpjJN4RXq0JgBkl6CI3qHpiEWxNxeo-GL8ZZM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Maria Oliveira\",\r\n    \"cpf\": \"987.654.321-00\",\r\n    \"email\": \"maria@example.com\",\r\n    \"telefone\": \"(88) 88888-8888\",\r\n    \"dataContratacao\": \"2022-10-05\",\r\n    \"dataNascimento\": \"1985-12-10\",\r\n    \"genero\": \"Feminino\",\r\n    \"endereco\": {\r\n        \"cep\": \"54321-987\",\r\n        \"uf\": \"RJ\",\r\n        \"localidade\": \"Rio de Janeiro\",\r\n        \"bairro\": \"Copacabana\",\r\n        \"logradouro\": \"Avenida Atlântica\",\r\n        \"numero\": \"500\",\r\n        \"complemento\": \"Bloco A, Ap. 301\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Cliente/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Cliente",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Cliente/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Cliente",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
